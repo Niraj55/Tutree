@@ -1,0 +1,337 @@
+/*input icon*/
+input[type=text0] {
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('./icons8-search-24.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text1] {
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('./icons8-marker-24.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+.sidenav {
+  width: 300px;
+  margin-top: 2%;
+  z-index: 1;
+  top: 28%;
+  left: 5%;
+  background-color: rgb(240, 240, 240);
+  overflow-x: visible;
+  padding-top: 20px;
+  border: 4px solid #070707;
+  
+}
+
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #070707;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Main content */
+.main {
+margin-left: -7%;
+}
+.active {
+  background-color: rgb(255, 255, 255);
+  color: rgb(12, 11, 11);
+}
+
+.dropdown-container {
+  background-color: rgb(255, 255, 255);
+  display: none;
+  padding-left: 8px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.card2
+{
+  background-color: rgb(241, 241, 241);
+  width: 50%;
+  font-size: 12px;
+}
+
+/* feedback */
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	visibility: hidden;
+	opacity: 0;
+}
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+.popup {
+  margin: 5% auto;
+  width: 78%;
+	padding: 15px;
+  position: absolute;
+  margin-right: 12%;
+  padding-left: 20%;
+}
+
+.popup .close {
+	position: absolute;
+	top: 21px;
+  right: 2%;
+  border: 2px solid black;
+  border-radius: 100px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: #000;
+	padding: 0px 5px 5px;
+}
+
+
+.popup .close:hover {
+	color: #ffffff;
+}
+.div1 {
+	padding: 20px;
+  background:#fff;
+  border: 2px solid black;
+}
+
+.clr
+{
+  background-color: rgb(221, 221, 221);
+}
+
+#feedback {
+	height: 0px;
+	width: 85px;
+	position: fixed;
+	right: 0;
+	top: 50%;
+	z-index: 1000;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+#feedback a {
+	display: block;
+	height: 52px;
+	padding-top: 10px;
+	width: 155px;
+  text-align: center;
+  border-top: 4px solid blue;
+  width: 100%;
+  color: rgb(7, 7, 7);
+  background-color: #eff1f1;
+	font-family: Arial, sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+	text-decoration: none;
+}
+#feedback a:hover {
+	background:#fafbfc;
+}
+
+
+footer {
+  background-color: rgb(245, 245, 245);
+  margin-top: 11%;
+  padding-bottom: 3px;
+  border-bottom: 2px solid rgb(199, 199, 199);
+  shape-outside: margin-box;
+}
+.s1
+{
+  margin-left: -30px;
+}
+
+.button1
+{
+  margin-left: 80% !important;
+}
+.input_lan
+{
+  margin-left: 66%;
+}
+.jobs
+{
+  margin-left: 28%;
+   margin-top: 2%;
+}
+.ads1 img{
+  width: 220px;
+  height: 500px;
+  margin-left: -20px;
+}
+.ads2 img
+{
+  width: 200px;
+  height: 200px;
+}
+.text-block {
+  position: absolute;
+  font-size: 14px;
+  bottom: 50px;
+  right: 100px;
+  color: rgb(2, 2, 2);
+}
+/* Some media queries for responsiveness */
+@media screen and (max-height: 650px) {
+  .div1 {
+    background:#fff;
+    border: 2px solid black;
+    position: relative;
+    padding: 5px;
+  }
+  .popup {
+    margin: 0% auto;
+    width: 100%;
+    height: 20%;
+    padding: 15px;
+    position: absolute;
+  }
+  
+  #feedback {
+    width: 18%;
+    position: fixed;
+    left: 235px;
+  }
+  #feedback a {
+    font-size: 12px;
+  }
+  .clr
+{
+  background-color: rgb(221, 221, 221);
+  font-size: 10px;
+}
+.clrs
+{
+  font-size: 12px;
+}
+.button1
+{
+  margin-top: -10%;
+  margin-left: -10%;
+  font-size: 6px;
+}
+.footer_cls
+{
+  font-size: 12px;
+}
+.s1
+{
+  margin-left: 0%;
+}
+.card2
+{
+  background-color: rgb(241, 241, 241);
+  width: 100%;
+  font-size: 8px;
+}
+.asd3
+{
+  font-size: 10px;
+  margin-top: 2%;
+  
+}
+.ads2 img
+{
+  width: 224px;
+  height: 200px;
+}
+.ads1 img{
+  width: 224px;
+  height: 300px;
+  margin-left: 20px;
+  margin-top: 5%;
+}
+.text-block {
+  position: absolute;
+  font-size: 12px;
+  top: 120px;
+  right: 60px;
+  color: rgb(241, 241, 241);
+  margin-bottom: 20%;
+}
+.input_lan
+{
+  margin-left: 60%;
+  width: 120px;
+}
+.popup .close {
+	
+	top: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+	transition: all 200ms;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: #000;
+  padding: 0px 2px 2px;
+
+}
+
+.jobs
+{
+  margin-left: 20%;
+   margin-top: 2%;
+}
+.sidenav {
+  width: 280px;
+  margin-top: 2%;
+  z-index: 1;
+  top: 28%;
+  left: 1%;
+  margin-left: 8%!important;
+  background-color: rgb(240, 240, 240);
+  overflow-x: visible;
+  padding-top: 5px;
+  border: 2px solid #070707;
+  
+}
+
+.sidenav a, .dropdown-btn {
+  padding: 3px 4px 3px 8px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #070707;
+  border: none;
+  background: none;
+  width: 60%;
+  text-align: left;
+  cursor: pointer;
+  outline: none ;
+}
+
+}

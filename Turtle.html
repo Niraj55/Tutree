@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="Turtle.css">
+    <title>Turtle</title>
+  </head>
+  <body>
+
+  <!--------Navbar------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="./index.png" width="180" height="30" alt="" loading="lazy">
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Find Jobs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Create your profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recommendation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">resources</a>
+              </li>
+          </ul>
+          <span class="navbar-text">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SignIn</a>
+                  </li><li class="nav-item">
+                    <a class="nav-link" href="#">Employers &#9656;</a>
+                  </li>
+            </ul>
+          </span>
+        </div>
+      </nav>
+      <nav class="navbar navbar-dark bg-dark">
+       <div class="container jobs">
+        <p class="text-white mb-0">Jobs and vaccancies</p>
+       </div>
+        <form class="form-inline mx-auto">
+         <input class="form-control mr-sm-2 mt-2 " type="text0" name="search" placeholder="eg. Programmer" aria-label="Search" >
+          <input class="form-control mr-sm-2 mt-2" type="text1" name="search"  placeholder="eg. Mumbai" aria-label="Search">
+          <button class="btn btn-outline-primary  my-sm-0" type="submit" style="margin-top: 1% !important; ">Find jobs</button>
+        </form>
+      </nav>
+      <!--------Navbar-close------>
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            
+      <div class="sidenav">
+        <button class="dropdown-btn"><p>Date Posted<span style="font-weight:bold; margin-left: 40% ;"> &#8722;</span></p></button>
+        <div class="dropdown-container">
+         <form action="">
+           <input type="radio" id="24hours" name="days" value="24hours">
+           <label for="male">24 Hours</label><br>
+           <input type="radio" id="3Days" name="days" value="3Days">
+           <label for="female">3 Days</label><br>
+           <input type="radio" id="7Days" name="days" value="7Days">
+           <label for="other">7 Days</label><br>
+           <input type="radio" id="30Days" name="days" value="30Days">
+           <label for="other">30 Days</label>
+         
+         </form>
+       </div>
+       <button class="dropdown-btn"><p>Job Type <span style="font-weight:bold; margin-left: 51% ;"> &#8722;</span></p></button>
+       <div class="dropdown-container">
+         <form action="">
+           <input type="checkbox" id="All" name="type" value="All">
+           <label for="vehicle1">All</label><br>
+           <input type="checkbox" id="Full" name="type" value="Full">
+           <label for="vehicle2">Full Time Employee</label><br>
+           <input type="checkbox" id="Part" name="type" value="Part">
+           <label for="vehicle3">Part Time Employee</label><br><br>
+         </form>
+       </div>
+       <button class="dropdown-btn"><p>Categories <span style="font-weight:bold; margin-left: 45% ;"> &#8722;</span></p></button>
+       <div class="dropdown-container">
+         <form action="">
+           <input type="radio" id="24hours" name="days" value="24hours">
+           <label for="male">Information technology</label><br>
+           <input type="radio" id="3Days" name="days" value="3Days">
+           <label for="female">Engineering</label><br>
+           <input type="radio" id="7Days" name="days" value="7Days">
+           <label for="other">Product Based Companies</label><br>
+     
+         
+         </form>
+       </div>
+       <button class="dropdown-btn"><p>States<span style="font-weight:bold; margin-left: 64% ;"> &#8722;</span></p></button>
+       <div class="dropdown-container">
+         <form action="">
+           <input type="radio" id="24hours" name="days" value="24hours">
+           <label for="male">Karnataka</label><br>
+           <input type="radio" id="3Days" name="days" value="3Days">
+           <label for="female">Maharashtra</label><br>
+           <input type="radio" id="7Days" name="days" value="7Days">
+           <label for="other">Chhattisgarh</label><br>
+      </form>
+       </div>
+     </div>
+
+          </div>
+          <div class="col-sm-8">
+            <div class="main ">
+              <div class="container mt-5 shadow-sm p-3 mb-2 bg-white rounded">
+                <div class="row">
+                  <div class="col-sm ">
+                    <button type="button" class="btn btn-outline-primary">Primary</button><br><br>
+                    <form class="form-inline">
+                      <p>Sort By:</p>
+                      <p>&nbsp;<a href="">Relevence &nbsp;&#8739;</a></p>
+                      <p>&nbsp;<a href="">&nbsp;Dates</a></p>
+                    </form>
+                  </div>
+                  </div>
+              </div>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-9 s1">
+                    <div class="container">
+                      <div class="row row-cols-1">
+                        <div class="col">
+                          <div class="card">
+                            <div class="card-body ">
+                              <h5 class="card-title"><p class="text-primary">Sr Software Developer</p></h5>
+                              <p class="" style="margin-top: -3%;"><sub><i class="fa fa-cart-plus font-weight-bold"></i>&nbsp;Posted 6 days ago </sub></p>
+                              <div class="d-flex flex-row card2" >
+                                <div class="p-2 bd-highlight"><i class="fa fa-clipboard font-weight-bold"></i>&nbsp;VST global</div>
+                                <div class="p-2 bd-highlight"><i class="fa fa-map-marker font-weight-bold"></i>&nbsp;Hydrabad</div>
+                                <div class="p-2 bd-highlight"><i class="fa fa-briefcase font-weight-bold"></i>&nbsp;Full Time Employee</div>
+                              </div>
+                              <p class="card-text asd3">Sr. DevOps Enginner Hydrabad Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam qui omnis quia aliquid.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col mt-3 ads2">
+                            <img src="https://images.unsplash.com/photo-1602200284821-e3a455f03725?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="">
+                            <div class="container">
+                              <img src="img_nature_wide.jpg" alt="Geeksforgeeks">
+                              <div class="text-block">
+                                
+                                <p><b> OPPS : Beginner to advance</b></p>
+                                <p>Low level design for SDE1 interveiw</p>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 ads1">
+                   <img src="https://images.unsplash.com/photo-1598763322643-31ee48de7e16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="">
+                  </div>
+                  </div>
+                  </div>
+
+          </div>
+        </div>
+      </div>
+    
+
+
+      
+   <!----feedback-----> 
+        <div id="feedback">
+        <a href="#popup1">Feedback</a>
+        </div>
+        <div id="popup1" class="overlay">
+        <div class="popup ">
+        <div class="div1" style="background:#fff">
+        <a class="close" href="#">×</a>
+        <div class="content" >
+        <h3 style="text-align:center"><img src="./index.png" width="200" height="50" alt=""></h3>
+                  <form action="#">
+                    <div class="form-group col-md-4 input_lan">
+                      <select id="inputState" class="form-control">
+                        <option selected>English</option>
+                        <option>Hindi</option>
+                      </select>
+                    </div>
+                    <hr>
+                        <p class="clrs">What type of feedbake would you like to leave for us ?</p>
+                        <div class="d-flex p-2 bd-highlight clr ">Lorem ipsum dolor sit amet.</div><br>
+                        <div class="d-flex p-2 bd-highlight clr">Lorem ipsum dolor sit amet.</div><br>
+                        <div class="d-flex p-2 bd-highlight clr">Lorem ipsum dolor sit amet.</div><br>
+                        <hr style="border: 3px solid rgb(45, 45, 45);">
+                        <div >
+                          <button type="button" class="btn btn-secondary button1">&#x27A4;</button>
+                        </div>
+                        <p class="text-center footer_cls">Powered by CareerBuilder</p>
+                  </form>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+
+    <!----feedback-close----> 
+          <footer >
+            <hr>
+            <p class="ml-5 pt-1 text-dark clrs">This site Lorem, ipsum dolor sit amet consectetur adipisicing elit. &nbsp;&nbsp;<button type="button" class="btn btn-primary">Ok</button></p>
+            
+          </footer>
+         
+      <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+        </script>
+        
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
